@@ -33,7 +33,10 @@ const ProductPage = () => {
                 Math.random() * menuData[keyword]?.length
             );
 
-            while (randomNums.has(randomNum)) {
+            while (
+                randomNums.has(randomNum) ||
+                menuData[keyword][randomNum].id === id
+            ) {
                 randomNum = Math.floor(
                     Math.random() * menuData[keyword]?.length
                 );
