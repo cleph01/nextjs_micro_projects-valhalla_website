@@ -198,8 +198,8 @@ export default function Home() {
                     <div>
                         <p>
                             Our Executive Chef, Terrence Ryan, has been
-                            enginneering tremendous recipes, flavors, and
-                            combinations for us since we first opened in 2005.
+                            enginneering flawless recipes with tremendous flavor
+                            since we first opened in 2005.
                         </p>
                         <br />
                         <p>
