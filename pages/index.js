@@ -96,10 +96,10 @@ export default function Home() {
                         the Taconic Parkway close to the Kensico Dam.
                     </p>
                     <p>
-                        Last stop is . Hop into our Victorian Dining Parlour,
-                        antique Presidential Car, gourmet caboose, and trackside
-                        dining room - and welcome to the best-in-class dining
-                        journey this side of the Hudson.
+                        Hop into our Victorian Dining Parlour, antique
+                        Presidential Car, gourmet caboose, and trackside dining
+                        room - and welcome to the best-in-class dining journey
+                        this side of the Hudson.
                     </p>
                     <p>All Aboard!</p>
 
