@@ -1,4 +1,8 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+
+import { useSelector, useDispatch } from "react-redux";
+import { CLOSE_MENU, TOGGLE_SCROLLING } from "../redux/reducers/nav";
+
 import Head from "next/head";
 import Image from "next/image";
 import dish1 from "../public/images/dish1.png";
@@ -7,30 +11,20 @@ import dish3 from "../public/images/dish3.png";
 import dish4 from "../public/images/dish4.png";
 import dish5 from "../public/images/dish5.png";
 
-import {
-    BiSearchAlt2,
-    BiCart,
-    BiMenu,
-    BiPhone,
-    BiStar,
-    BiUpArrowAlt,
-    BiX,
-} from "react-icons/bi";
+import { BiFoodMenu, BiPhone, BiStar, BiUpArrowAlt } from "react-icons/bi";
 
 import styles from "@/styles/Home.module.css";
+import Header from "@/components/Header";
+import Link from "next/link";
 
 export default function Home() {
-    const [scrolling, setScrolling] = useState(false);
-    const [openMenu, setOpenMenu] = useState(false);
-
-    const handleMenuClick = () => {
-        setOpenMenu(!openMenu);
-    };
+    const { scrolling } = useSelector((state) => state.nav);
+    const dispatch = useDispatch();
 
     useEffect(() => {
         const scroll = (window.onscroll = () => {
-            setScrolling(window.scrollY > 100);
-            setOpenMenu(false);
+            dispatch(TOGGLE_SCROLLING(window.scrollY > 100));
+            dispatch(CLOSE_MENU());
         });
 
         return () => {
@@ -63,49 +57,20 @@ export default function Home() {
 
             {/* header section  */}
 
-            <header
-                className={`${styles.header} ${scrolling ? styles.sticky : ""}`}
-                id="header"
-            >
-                <a href="#" className={styles.logo}>
-                    Valhalla<span>Crossing</span>
-                </a>
-
-                <ul
-                    className={`${styles.navbar} ${
-                        openMenu ? styles.open : ""
-                    }`}
-                >
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#menu">Menu</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-
-                <div className={styles.h_icons}>
-                    <a href="#">
-                        <BiSearchAlt2 />
-                    </a>
-                    <a href="#">
-                        <BiCart />
-                    </a>
-                    <div id="menu_icon">
-                        {openMenu ? (
-                            <BiX onClick={() => handleMenuClick()} />
-                        ) : (
-                            <BiMenu onClick={() => handleMenuClick()} />
-                        )}
-                    </div>
-                </div>
-            </header>
+            <Header>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#menu">Menu</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </Header>
 
             {/* home section  */}
 
@@ -132,8 +97,8 @@ export default function Home() {
 
             <section className={styles.container}>
                 <div className={styles.main_text}>
-                    <h2>Breakfast</h2>
-                    <p>9.00 am - 11.00 am</p>
+                    <h2>Our <span>Rail</span> Car Fare</h2>
+                    {/* <p>9.00 am - 11.00 am</p> */}
                 </div>
                 <div className={styles.container_box}>
                     {[dish1, dish2, dish3, dish4, dish5].map((dish, idx) => (
@@ -202,9 +167,19 @@ export default function Home() {
                         Voluptate soluta ipsum consectetur.
                     </p>
                 </div>
+
+                {/* full menu link  */}
+
+                <div style={{ marginTop: "5rem" }}>
+                    <Link href="/menu" className={styles.btn}>
+                        <BiFoodMenu />
+                    </Link>
+                    <span className={styles.reserve}> See Full Menu</span>
+                </div>
+
                 <div className={styles.menu_content}>
                     {[dish1, dish2, dish3, dish4, dish5].map((dish, idx) => (
-                        <div kay={idx} className={styles.row}>
+                        <div key={idx} className={styles.row}>
                             <div className={styles.img_container}>
                                 <Image src={dish} alt="" />
                             </div>

@@ -1,0 +1,8 @@
+.subMenu {
+    width: 100%;
+    text-align: right;
+}
+
+.subMenu > a {
+    color: var(--main-color) !important;
+}

@@ -1,0 +1,65 @@
+.c_mainbx {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.4rem;
+    border-radius: 1rem;
+    height: 9rem;
+    background: var(--bg-color);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transition: all 0.45s ease;
+    padding: 0px 0rem 0 1rem;
+}
+
+.c_mainbx:hover {
+    transform: translateX(1rem);
+    cursor: pointer;
+}
+
+.c_mainbx .menu_price {
+    font-size: 1.4rem;
+    color: var(--main-color);
+    width: 25%;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.c_mainbx .container_img {
+    width: 7.5rem;
+    height: auto;
+    text-align: center;
+}
+
+.c_mainbx .container_img > img {
+    width: 7.5rem;
+    height: auto;
+}
+
+.c_mainbx .container_text {
+    height: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex: 1;
+}
+.c_mainbx .container_text p {
+    color: #6e6e6e;
+    font-size: var(--p-font);
+    font-weight: 500;
+}
+
+.c_mainbx .container_text a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+    color: var(--main-color);
+}
+
+.c_mainbx .container_text p.subtext {
+    font-size: 1rem;
+    color: var(--second-color);
+    line-height: 1.65;
+}
