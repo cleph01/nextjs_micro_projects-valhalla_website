@@ -70,7 +70,8 @@
 /* container section  */
 
 .container .main_text {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .container .main_text h2 {
@@ -83,6 +84,12 @@
     font-weight: 500;
     color: var(--second-color);
     line-height: 2.5rem;
+}
+
+.container .main_text p.hours {
+    font-size: 1.4rem;
+    line-height: normal;
+    margin-bottom: 3rem;
 }
 
 .container .container_box {
@@ -172,6 +179,11 @@
 
 /* menu  */
 /* menu  */
+
+.menu .main_text {
+    display: flex;
+    flex-direction: column;
+}
 
 .menu .main_text h2 {
     font-size: var(--h2-font);

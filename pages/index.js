@@ -11,7 +11,13 @@ import dish3 from "../public/images/dish3.png";
 import dish4 from "../public/images/dish4.png";
 import dish5 from "../public/images/dish5.png";
 
-import { BiFoodMenu, BiPhone, BiStar, BiUpArrowAlt } from "react-icons/bi";
+import {
+    BiFoodMenu,
+    BiPhone,
+    BiStar,
+    BiTrain,
+    BiUpArrowAlt,
+} from "react-icons/bi";
 
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
@@ -80,13 +86,29 @@ export default function Home() {
                         <span>Experience</span> History with Every Bite.
                     </h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dicta aut, vitae veritatis eligendi molestiae ex libero.
+                        Westchester Magazine's "Favorite Local Bar!" for our
+                        plentiful portions of great comfort food, the BEST
+                        burgers, huge fresh salads, and spike-driving
+                        sandwiches!
                     </p>
-                    <a href="tel:+19143125729" className={styles.btn}>
-                        <BiPhone />
+                    <p>
+                        We are located in the historic Valhalla Train Station on
+                        the Taconic Parkway close to the Kensico Dam.
+                    </p>
+                    <p>
+                        Last stop is . Hop into our Victorian Dining Parlour,
+                        antique Presidential Car, gourmet caboose, and trackside
+                        dining room - and welcome to the best-in-class dining
+                        journey this side of the Hudson.
+                    </p>
+                    <p>All Aboard!</p>
+
+                    <a href="tel:+19143125729">
+                        <span className={styles.btn}>
+                            <BiPhone />
+                        </span>
+                        <span className={styles.reserve}> Book a Table</span>
                     </a>
-                    <span className={styles.reserve}> Book a Table</span>
                 </div>
                 <div className={styles.home_img}>
                     <Image src={dish1} alt="" />
@@ -97,8 +119,13 @@ export default function Home() {
 
             <section className={styles.container}>
                 <div className={styles.main_text}>
-                    <h2>Our <span>Rail</span> Car Fare</h2>
-                    {/* <p>9.00 am - 11.00 am</p> */}
+                    <h2>
+                        Our <span>Rail</span> Car Fare
+                    </h2>
+                    <p className={styles.hours}>
+                        Lunch and Dinner served 6 days a week <br />
+                        (closed Mondays)
+                    </p>{" "}
                 </div>
                 <div className={styles.container_box}>
                     {[dish1, dish2, dish3, dish4, dish5].map((dish, idx) => (
@@ -133,48 +160,70 @@ export default function Home() {
                 </div>
                 <div className={styles.about_text}>
                     <h2>
-                        The <span>Healthy</span> Food for a
-                        <span> Healthy </span>
-                        Mood.
+                        <span>Ride</span> Back in
+                        <span> Time </span>and Grab a <span>Bite</span>
                     </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Possimus, dolorem? Est, dolores deleniti modi ratione
-                        quam expedita libero dicta veritatis voluptatem quia hic
-                        aliquam nemo, debitis corporis exercitationem
-                        repellendus quisquam.
-                    </p>
+                    <div>
+                        <p>
+                            A converted 1896 Lake Shore & Michigan Southern
+                            Railway car, our restaurant is fit for cozy and
+                            charming transcontinental appetite.
+                        </p>
+                        <p>
+                            Come enjoy a trip down memory land and grab a
+                            cocktail in the original train station building.
+                        </p>
+                        <p>
+                            From the collosal A-frame ceiling and wide-planked
+                            floors to our beautiful oak bar built in 1903 for
+                            Bronxville’s Hotel Gramatan, there is history in
+                            every glance.
+                        </p>
+                    </div>
                 </div>
             </section>
 
-            <a
-                href="tel:+19143125729"
-                className={styles.btn}
-                style={{ marginLeft: "4%" }}
-            >
-                <BiPhone />
-            </a>
-            <span className={styles.reserve}> Book a Table</span>
+            <Link href="/about" style={{ marginLeft: "4%" }}>
+                <span className={styles.btn}>
+                    <BiTrain />
+                </span>{" "}
+                <span className={styles.reserve}> About Us</span>
+            </Link>
 
             {/* menu setion  */}
 
             <section className={styles.menu} id="menu">
                 <div className={styles.main_text}>
                     <h2>Most Popular Dishes</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <div>
+                        <p>
+                            Our Executive Chef, Terrence Ryan, has been
+                            enginneering tremendous recipes, flavors, and
+                            combinations for us since we first opened in 2005.
+                        </p>
                         <br />
-                        Voluptate soluta ipsum consectetur.
-                    </p>
+                        <p>
+                            A graduate of the Culinary Institute of America his
+                            range of cuisine covers every appetite.
+                        </p>
+                        <br />
+
+                        <p>
+                            From delicious burgers to his famous Shepherd's Pie,
+                            Chef Ryan has you covered
+                        </p>
+                    </div>
                 </div>
 
                 {/* full menu link  */}
 
-                <div style={{ marginTop: "5rem" }}>
-                    <Link href="/menu" className={styles.btn}>
-                        <BiFoodMenu />
+                <div style={{ marginTop: "2.5rem" }}>
+                    <Link href="/menu">
+                        <span className={styles.btn}>
+                            <BiFoodMenu />
+                        </span>
+                        <span className={styles.reserve}> See Full Menu</span>
                     </Link>
-                    <span className={styles.reserve}> See Full Menu</span>
                 </div>
 
                 <div className={styles.menu_content}>

@@ -641,7 +641,7 @@ export const menuData = {
             id: 78,
             item: "Sweet Potato or Waffle Fries or Onion Rings",
             description: "(or half and half)",
-            price: "",
+            price: "$8.95",
             rating: 5,
             reviews: 7,
         },
