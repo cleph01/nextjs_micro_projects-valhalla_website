@@ -13,6 +13,7 @@ import Head from "next/head";
 import { useSelector, useDispatch } from "react-redux";
 import { CLOSE_MENU, TOGGLE_SCROLLING } from "@/redux/reducers/nav";
 import MenuItem from "@/components/MenuItem";
+import SuggestedItems from "@/components/SuggestedItems";
 
 const ProductPage = () => {
     const router = useRouter();
@@ -25,39 +26,39 @@ const ProductPage = () => {
 
     // Helper function to generate random Idx value between 0 and length of menu category
     // then 3 items are selected from the category list
-    const genRandomSuggestions = () => {
-        const randomNums = new Set();
+    // const genRandomSuggestions = () => {
+    //     const randomNums = new Set();
 
-        const suggestions = [...Array(3)].map((elem) => {
-            let randomNum = Math.floor(
-                Math.random() * menuData[keyword]?.length
-            );
+    //     const suggestions = [...Array(3)].map((elem) => {
+    //         let randomNum = Math.floor(
+    //             Math.random() * menuData[keyword]?.length
+    //         );
 
-            while (
-                randomNums.has(randomNum) ||
-                menuData[keyword][randomNum].id === id
-            ) {
-                randomNum = Math.floor(
-                    Math.random() * menuData[keyword]?.length
-                );
-            }
+    //         while (
+    //             randomNums.has(randomNum) ||
+    //             menuData[keyword][randomNum].id === id
+    //         ) {
+    //             randomNum = Math.floor(
+    //                 Math.random() * menuData[keyword]?.length
+    //             );
+    //         }
 
-            const suggestedItem = {
-                id: menuData[keyword][randomNum]?.id,
-                item: menuData[keyword][randomNum]?.item,
-                description: menuData[keyword][randomNum]?.description,
-                price: menuData[keyword][randomNum]?.price,
-                rating: 5,
-                reviews: 7,
-            };
+    //         const suggestedItem = {
+    //             id: menuData[keyword][randomNum]?.id,
+    //             item: menuData[keyword][randomNum]?.item,
+    //             description: menuData[keyword][randomNum]?.description,
+    //             price: menuData[keyword][randomNum]?.price,
+    //             rating: 5,
+    //             reviews: 7,
+    //         };
 
-            randomNums.add(randomNum);
+    //         randomNums.add(randomNum);
 
-            return suggestedItem;
-        });
+    //         return suggestedItem;
+    //     });
 
-        return suggestions;
-    };
+    //     return suggestions;
+    // };
 
     useEffect(() => {
         console.log("menuData at keyword: ", menuData[keyword]);
@@ -152,13 +153,8 @@ const ProductPage = () => {
                         </div>
                     </div>
                 </div>
-                <h2> Similar items you may like: </h2>
 
-                <div className={styles.container_box}>
-                    {genRandomSuggestions()?.map((item, idx) => (
-                        <MenuItem key={idx} keyword={keyword} item={item} />
-                    ))}
-                </div>
+                <SuggestedItems keyword={keyword} id={id} />
             </section>
         </>
     );
