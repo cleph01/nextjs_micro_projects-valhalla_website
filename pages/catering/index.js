@@ -122,7 +122,7 @@ const index = () => {
             <section className={styles.container} id="sides">
                 <div className={styles.main_text}>
                     <h2>Accompaniments</h2>
-                    <p>Select two of the below items as main dish</p>
+                    <p>Select two of the below items as sides</p>
                 </div>
                 <br />
                 <div className={styles.container_box}>
