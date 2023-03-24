@@ -281,43 +281,32 @@ export default function Home() {
                     <div className={styles.contact_content}>
                         <h4>Contact</h4>
                         <li>
-                            <a href="#home">Contact Us</a>
+                            <a href="#">Contact Us</a>
                         </li>
                         <li>
-                            <a href="#about">Press Center</a>
+                            <a href="#">Directions</a>
                         </li>
                         <li>
-                            <a href="#menu">Careers</a>
+                            <a href="#">Press Center</a>
                         </li>
                         <li>
-                            <a href="#contact">Faq</a>
+                            <a href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#">Faqs</a>
                         </li>
                     </div>
+
                     <div className={styles.contact_content}>
                         <h4>Follow Us</h4>
                         <li>
-                            <a href="#home">Contact Us</a>
+                            <a href="#">Facebook</a>
                         </li>
                         <li>
-                            <a href="#about">Press Center</a>
+                            <a href="#">Instagram</a>
                         </li>
                         <li>
-                            <a href="#menu">Careers</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Faq</a>
-                        </li>
-                    </div>
-                    <div className={styles.contact_content}>
-                        <h4>Follow Us</h4>
-                        <li>
-                            <a href="#home">Facebook</a>
-                        </li>
-                        <li>
-                            <a href="#about">Instagram</a>
-                        </li>
-                        <li>
-                            <a href="#menu">Careers</a>
+                            <a href="#">YouTube</a>
                         </li>
                     </div>
                 </div>
