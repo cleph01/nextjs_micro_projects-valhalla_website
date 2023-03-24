@@ -119,8 +119,8 @@ const index = () => {
 
                 {/* Sandwiches  */}
 
-                <div className={styles.main_text}>
-                    <h2 id="sandwiches">Sandwiches</h2>
+                <div className={styles.main_text} id="sandwiches">
+                    <h2>Sandwiches</h2>
                     <p>
                         All sandwiches and burgers are served w. french fries,
                         onion rings, or some of both!
@@ -142,8 +142,8 @@ const index = () => {
                 </div>
 
                 {/* Salads  */}
-                <div className={styles.main_text}>
-                    <h2 id="salads">Salads</h2>
+                <div className={styles.main_text} id="salads">
+                    <h2>Salads</h2>
                     <p></p>
                     <br />
                     <p>Add-ons: Chicken +$6, Steak or Shrimp +$9</p>
@@ -156,8 +156,8 @@ const index = () => {
 
                 {/* wraps  */}
 
-                <div className={styles.main_text}>
-                    <h2 id="wraps">Wraps</h2>
+                <div className={styles.main_text} id="wraps">
+                    <h2>Wraps</h2>
 
                     <p>
                         All wraps are served w. french fries, onion rings, or
@@ -178,8 +178,8 @@ const index = () => {
 
                 {/* sides  */}
 
-                <div className={styles.main_text}>
-                    <h2 id="sides">Sides</h2>
+                <div className={styles.main_text} id="sides">
+                    <h2>Sides</h2>
                 </div>
                 <div className={styles.container_box}>
                     {menuData.sides.map((item, idx) => (
@@ -189,8 +189,8 @@ const index = () => {
 
                 {/* kids  */}
 
-                <div className={styles.main_text}>
-                    <h2 id="kids">Kids</h2>
+                <div className={styles.main_text} id="kids">
+                    <h2>Kids</h2>
                 </div>
                 <div className={styles.container_box}>
                     {menuData.kids.map((item, idx) => (

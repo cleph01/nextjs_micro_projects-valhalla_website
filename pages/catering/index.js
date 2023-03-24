@@ -9,6 +9,7 @@ import { CLOSE_MENU, TOGGLE_SCROLLING } from "@/redux/reducers/nav";
 
 import styles from "@/styles/Catering.module.css";
 import { BiMoney, BiPhone, BiUpArrowAlt, BiWinkSmile } from "react-icons/bi";
+import Head from "next/head";
 
 const index = () => {
     const { scrolling } = useSelector((state) => state.nav);
@@ -27,6 +28,26 @@ const index = () => {
 
     return (
         <>
+            <Head>
+                <title>
+                    Catering | Valhalla Crossing | Best Casual Dining Experience
+                    in Westchester County
+                </title>
+                <meta
+                    name="description"
+                    content="Valhalla Crossing caters great food in local Valhalla, New York. Choose a location for your party - the authentic caboose, the formal presedential car, the fun trackside room, or the entire bar. We can design a menu for you that will suit all your needs."
+                />
+                <meta
+                    name="keywords"
+                    content="valhalla crossing restaurant catering food local restaurant pub new york american train station party private rooms"
+                />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1"
+                />
+                <link rel="icon" href="/favicon.ico" />
+                <link rel="apple-touch-icon" href="/profile.jpg" />
+            </Head>
             <Header>
                 <h2 style={{ width: "100%", textAlign: "right" }}>
                     <em>Catering</em>
