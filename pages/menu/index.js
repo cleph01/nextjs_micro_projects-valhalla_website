@@ -8,12 +8,6 @@ import { CLOSE_MENU, TOGGLE_SCROLLING } from "@/redux/reducers/nav";
 
 import styles from "@/styles/FullMenu.module.css";
 
-import dish1 from "@/public/images/dish1.png";
-import dish2 from "@/public/images/dish2.png";
-import dish3 from "@/public/images/dish3.png";
-import dish4 from "@/public/images/dish4.png";
-import dish5 from "@/public/images/dish5.png";
-import Image from "next/image";
 import { BiUpArrowAlt } from "react-icons/bi";
 
 import { menuData } from "../../data/menuData";
@@ -23,7 +17,6 @@ import MenuItem from "@/components/MenuItem";
 const index = () => {
     console.log("menu data: ", menuData);
 
-    const { scrolling } = useSelector((state) => state.nav);
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -99,7 +92,7 @@ const index = () => {
                 <p>
                     We pride ourselves on using only the freshest, organic,
                     locally sourced ingredients to create dishes that are as
-                    delicious as ther are good for you.
+                    delicious as they are good for you.
                 </p>
 
                 {/* starters  */}
