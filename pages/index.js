@@ -74,6 +74,9 @@ export default function Home() {
                     <a href="#menu">Menu</a>
                 </li>
                 <li>
+                    <Link href="/catering">Catering</Link>
+                </li>
+                <li>
                     <a href="#contact">Contact</a>
                 </li>
             </Header>
@@ -83,7 +86,7 @@ export default function Home() {
             <section className={styles.home} id="home">
                 <div className={styles.home_text}>
                     <h1>
-                        <span>Experience</span> History with Every Bite.
+                        <span>History</span> with Every Bite.
                     </h1>
                     <p>
                         Westchester Magazine's "Favorite Local Bar!" for our
@@ -195,24 +198,22 @@ export default function Home() {
             <section className={styles.menu} id="menu">
                 <div className={styles.main_text}>
                     <h2>Most Popular Dishes</h2>
-                    <div>
-                        <p>
-                            Our Executive Chef, Terrence Ryan, has been
-                            enginneering flawless recipes with tremendous flavor
-                            since we first opened in 2005.
-                        </p>
-                        <br />
-                        <p>
-                            A graduate of the Culinary Institute of America his
-                            range of cuisine covers every appetite.
-                        </p>
-                        <br />
 
-                        <p>
-                            From delicious burgers to his famous Shepherd's Pie,
-                            Chef Ryan has you covered
-                        </p>
-                    </div>
+                    <p>
+                        Our Executive Chef, Terrence Ryan, has been enginneering
+                        flawless recipes with tremendous flavor since we first
+                        opened in 2005.
+                    </p>
+
+                    <p>
+                        A graduate of the Culinary Institute of America his
+                        range of cuisine covers every appetite.
+                    </p>
+
+                    <p>
+                        From delicious burgers to his famous Shepherd's Pie,
+                        Chef Ryan has you covered
+                    </p>
                 </div>
 
                 {/* full menu link  */}

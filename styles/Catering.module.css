@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .main_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.container .main_text h2 {
+    font-size: var(--h2-font);
+    margin-bottom: 1rem;
+}
+
+.container .main_text h3 {
+    font-size: var(--h3-font);
+    margin-bottom: 1rem;
+}
+
+.container .main_text ul {
+    margin: 0 0 2rem 2rem;
+}
+
+.container .main_text ul li {
+    list-style: circle;
+    font-size: var(--p-font);
+    line-height: 1.75;
+}
+
+.container .main_text p {
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--second-color);
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* button  */
+.btn {
+    display: inline-block;
+    font-size: var(--big-font);
+    padding: 1rem 1.6rem;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    font-weight: 600;
+    border-radius: 50%;
+    transition: all 0.45s ease;
+}
+
+.reserve {
+    margin: 0 0 0 4%;
+    font-size: var(--p-font);
+}
+
+/* giphy container  */
+.giph_container {
+    padding: 0 8%;
+    display: flex;
+    justify-content: center;
+}
+
+.giph_container iframe {
+    border-radius: 9.8rem;
+}
+/* scroll top  */
+.scroll_top {
+    position: fixed;
+    bottom: 2.2rem;
+    right: 2.2rem;
+
+    padding: 0.8rem;
+    font-size: var(--p-font);
+    color: #fffbf6;
+    background: var(--main-color);
+    border-radius: 0.5rem;
+}

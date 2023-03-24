@@ -1,10 +1,7 @@
 import styles from "@/styles/MenuItem.module.css";
 
-import { faker } from "@faker-js/faker";
-import Image from "next/image";
 import Link from "next/link";
 
-import { menuData } from "@/data/menuData";
 import { BiInfoCircle } from "react-icons/bi";
 
 const MenuItem = ({ keyword, item }) => {
@@ -21,11 +18,9 @@ const MenuItem = ({ keyword, item }) => {
                             ? `${item.description.slice(0, 50)}...`
                             : item.description}
                     </p>
-                    <Link
-                        href={`/menu/${keyword}/${item.id}`}
-                        
-                    >
-                        <BiInfoCircle /> {"   "}(see details)
+                    <Link href={`/menu/${keyword}/${item.id}`}>
+                        <BiInfoCircle />
+                        &nbsp; (see details)
                     </Link>
                 </div>
                 <div className={styles.menu_price}>

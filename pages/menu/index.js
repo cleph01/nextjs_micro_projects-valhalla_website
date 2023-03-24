@@ -97,8 +97,9 @@ const index = () => {
             <section className={styles.container} id="starters">
                 <h2>Only the Freshest Local Ingredients</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptate soluta ipsum consectetur.
+                    We pride ourselves on using only the freshest, organic,
+                    locally sourced ingredients to create dishes that are as
+                    delicious as ther are good for you.
                 </p>
 
                 {/* starters  */}

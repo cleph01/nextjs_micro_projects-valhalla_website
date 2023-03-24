@@ -56,7 +56,6 @@
 
 .reserve {
     margin: 0 0 0 4%;
-    font-size: var(--p-font);
 }
 
 .reserve {
@@ -182,6 +181,8 @@
 .menu .main_text {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 30rem;
 }
 
 .menu .main_text h2 {

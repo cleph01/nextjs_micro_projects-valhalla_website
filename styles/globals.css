@@ -18,7 +18,8 @@
     --brand-font: 2rem;
     --big-font: 2.6rem;
     --h2-font: 1.8rem;
-    --p-font: 1.6rem;
+    --h3-font: 1.6rem;
+    --p-font: 1.4rem;
     --subtext-font: 1.2rem;
     --rating-star-color: #ffd700;
 }
@@ -39,7 +40,3 @@ span {
 section {
     padding: 9rem 4% 2%;
 }
-
-
-
-
