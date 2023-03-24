@@ -93,7 +93,7 @@ const index = () => {
                         <span className={styles.reserve}>or Louise</span>
                     </a>
                     <br />
-                    <a href="/#pricing">
+                    <a href="#pricing">
                         <span className={styles.btn}>
                             <BiMoney />
                         </span>
