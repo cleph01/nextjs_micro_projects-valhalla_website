@@ -169,8 +169,8 @@ export default function Home() {
                     <div>
                         <p>
                             A converted 1896 Lake Shore & Michigan Southern
-                            Railway car, our restaurant is fit for cozy and
-                            charming transcontinental appetite.
+                            Railway car, our restaurant is a cozy and charming
+                            fit for your transcontinental appetite.
                         </p>
                         <p>
                             Come enjoy a trip down memory land and grab a
@@ -179,7 +179,7 @@ export default function Home() {
                         <p>
                             From the collosal A-frame ceiling and wide-planked
                             floors to our beautiful oak bar built in 1903 for
-                            Bronxville’s Hotel Gramatan, there is history in
+                            Bronxville’s Hotel Gramatan, you will experience history with
                             every glance.
                         </p>
                     </div>
@@ -200,7 +200,7 @@ export default function Home() {
                     <h2>Most Popular Dishes</h2>
 
                     <p>
-                        Our Executive Chef, Terrence Ryan, has been enginneering
+                        Our Executive Chef, Terrence Ryan, has been engineering
                         flawless recipes with tremendous flavor since we first
                         opened in 2005.
                     </p>
