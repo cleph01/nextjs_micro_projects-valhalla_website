@@ -24,42 +24,6 @@ const ProductPage = () => {
 
     const [item, setItem] = useState("pending");
 
-    // Helper function to generate random Idx value between 0 and length of menu category
-    // then 3 items are selected from the category list
-    // const genRandomSuggestions = () => {
-    //     const randomNums = new Set();
-
-    //     const suggestions = [...Array(3)].map((elem) => {
-    //         let randomNum = Math.floor(
-    //             Math.random() * menuData[keyword]?.length
-    //         );
-
-    //         while (
-    //             randomNums.has(randomNum) ||
-    //             menuData[keyword][randomNum].id === id
-    //         ) {
-    //             randomNum = Math.floor(
-    //                 Math.random() * menuData[keyword]?.length
-    //             );
-    //         }
-
-    //         const suggestedItem = {
-    //             id: menuData[keyword][randomNum]?.id,
-    //             item: menuData[keyword][randomNum]?.item,
-    //             description: menuData[keyword][randomNum]?.description,
-    //             price: menuData[keyword][randomNum]?.price,
-    //             rating: 5,
-    //             reviews: 7,
-    //         };
-
-    //         randomNums.add(randomNum);
-
-    //         return suggestedItem;
-    //     });
-
-    //     return suggestions;
-    // };
-
     useEffect(() => {
         console.log("menuData at keyword: ", menuData[keyword]);
         const foundItem = menuData[keyword]?.find(
@@ -122,6 +86,9 @@ const ProductPage = () => {
                 </li>
                 <li>
                     <a href="/menu">Menu</a>
+                </li>
+                <li>
+                    <a href="/catering">Catering</a>
                 </li>
                 <li>
                     <a href="/#contact">Contact</a>
