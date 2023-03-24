@@ -24,6 +24,7 @@
 }
 
 .container .main_text ul li {
+    color: var(--second-color);
     list-style: circle;
     font-size: var(--p-font);
     line-height: 1.75;
@@ -37,6 +38,13 @@
     margin-bottom: 2rem;
 }
 
+.container .container_box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, auto));
+    gap: 1.6rem;
+    align-items: center;
+    margin-top: 0.4rem;
+}
 /* button  */
 .btn {
     display: inline-block;
