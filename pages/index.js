@@ -76,6 +76,7 @@ export default function Home() {
                 <li>
                     <Link href="/catering">Catering</Link>
                 </li>
+
                 <li>
                     <a href="#contact">Contact</a>
                 </li>
@@ -179,8 +180,8 @@ export default function Home() {
                         <p>
                             From the collosal A-frame ceiling and wide-planked
                             floors to our beautiful oak bar built in 1903 for
-                            Bronxville’s Hotel Gramatan, you will experience history with
-                            every glance.
+                            Bronxville’s Hotel Gramatan, you will experience
+                            history with every glance.
                         </p>
                     </div>
                 </div>

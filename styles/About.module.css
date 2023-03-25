@@ -1,0 +1,22 @@
+/* slider  */
+
+.container {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* scroll top  */
+.scroll_top {
+    position: fixed;
+    bottom: 2.2rem;
+    right: 2.2rem;
+
+    padding: 0.8rem;
+    font-size: var(--p-font);
+    color: #fffbf6;
+    background: var(--main-color);
+    border-radius: 0.5rem;
+}
