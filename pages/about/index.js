@@ -7,14 +7,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { CLOSE_MENU, TOGGLE_SCROLLING } from "@/redux/reducers/nav";
 
 import styles from "@/styles/About.module.css";
-import {
-    BiArrowBack,
-    BiMoney,
-    BiPhone,
-    BiRightArrowAlt,
-    BiUpArrowAlt,
-    BiWinkSmile,
-} from "react-icons/bi";
+import { BiUpArrowAlt } from "react-icons/bi";
 import Head from "next/head";
 import Carousel from "@/components/carousel/Carousel";
 
@@ -87,31 +80,31 @@ const index = () => {
             </Header>
 
             <section className={styles.container} id="gallery">
-                {/* main main dining room  */}
+                {/* main dining room  */}
                 <div id="main"></div>
                 <Carousel content={images.main} />
 
-                {/* main caboose  */}
+                {/* caboose  */}
                 <div id="caboose"></div>
                 <Carousel content={images.caboose} />
 
-                {/* main track room  */}
+                {/* track room  */}
                 <div className="track"></div>
                 <Carousel content={images.trackRoom} />
 
-                {/* main club room  */}
+                {/* club room  */}
                 <div className="club"></div>
                 <Carousel content={images.clubRoom} />
 
-                {/* main bar  */}
+                {/* bar  */}
                 <div className="bar"></div>
                 <Carousel content={images.bar} />
 
-                {/* main presidential car  */}
+                {/* presidential car  */}
                 <div className="pres"></div>
                 <Carousel content={images.presidential} />
 
-                {/* main dining room  */}
+                {/* dining rooms  */}
                 <div className="dining"></div>
                 <Carousel content={images.diningRoom} />
             </section>
