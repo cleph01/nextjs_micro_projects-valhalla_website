@@ -25,7 +25,6 @@ const ProductPage = () => {
     const [item, setItem] = useState("pending");
 
     useEffect(() => {
-        console.log("menuData at keyword: ", menuData[keyword]);
         const foundItem = menuData[keyword]?.find(
             (elem) => elem.id === Number(id)
         );

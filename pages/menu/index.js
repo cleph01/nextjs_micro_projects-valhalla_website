@@ -15,8 +15,6 @@ import { menuData } from "../../data/menuData";
 import MenuItem from "@/components/MenuItem";
 
 const index = () => {
-    console.log("menu data: ", menuData);
-
     const dispatch = useDispatch();
 
     useEffect(() => {
