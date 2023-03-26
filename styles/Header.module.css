@@ -16,7 +16,6 @@
 
 .sticky {
     padding: 2.3rem 4%;
-
     background: var(--bg-color);
     box-shadow: 0 0.4rem 1.5rem rgb(0 0 0 / 8%);
 }
@@ -49,7 +48,7 @@
 .navbar a {
     display: block;
     color: var(--text-color);
-    font-size: var(--p-font);
+    font-size: var(--nav-font);
     font-weight: 600;
     padding: 0.5rem;
     margin: 1.3rem 0;
@@ -68,22 +67,41 @@
     padding: 0.5rem 1.2rem;
     background: var(--main-color);
     border-radius: 2rem;
-    font-size: var(--p-font);
+    font-size: var(--h2-font);
     color: var(--bg-color);
     cursor: pointer;
 }
 
 .h_icons a {
-    font-size: var(--p-font);
     color: var(--bg-color);
-    margin-right: 1.5rem;
     margin-right: 0.8rem;
 }
 
-#menu_icon {
+.menu_icon {
     color: var(--bg-color);
-    font-size: var(--p-font);
     z-index: 1001;
     cursor: pointer;
     display: block;
+}
+
+@media (min-width: 990px) {
+    .navbar {
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        padding: 0;
+        background: inherit;
+    }
+
+    .navbar a {
+        margin: 0.2rem 2.5rem;
+    }
+
+    .h_icons a {
+        margin-right: 0;
+    }
+    .menu_icon {
+        display: none;
+    }
 }

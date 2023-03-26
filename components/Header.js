@@ -28,13 +28,13 @@ const Header = ({ children }) => {
             </ul>
 
             <div className={styles.h_icons}>
-                <a href="#">
+                {/* <a href="#">
                     <BiSearchAlt2 />
-                </a>
+                </a> */}
                 <a href="#">
                     <BiCart />
                 </a>
-                <div id="menu_icon">
+                <div id="menu_icon" className={styles.menu_icon}>
                     {openMenu ? (
                         <BiX onClick={() => handleMenuClick()} />
                     ) : (

@@ -19,6 +19,7 @@
     --big-font: 2.6rem;
     --h2-font: 1.8rem;
     --h3-font: 1.6rem;
+    --nav-font: 1.4rem;
     --p-font: 1.4rem;
     --subtext-font: 1.2rem;
     --rating-star-color: #ffd700;
@@ -39,4 +40,12 @@ span {
 
 section {
     padding: 0 4% 0;
+}
+
+@media (min-width: 990px) {
+    :root {
+        --brand-font: 2.8rem;
+        --nav-font: 1.8rem;
+        --h2-font: 2rem;
+    }
 }

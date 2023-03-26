@@ -71,6 +71,7 @@
 .container {
     margin: 5rem 4% 2%;
 }
+
 .container .main_text {
     display: flex;
     flex-direction: column;
@@ -273,7 +274,7 @@
 /* contact section  */
 
 .contact {
-    padding: 7rem 2%;
+    padding: 9rem 8% 2%;
 }
 
 .contact .main_contact {
@@ -324,4 +325,30 @@
     color: #fffbf6;
     background: var(--main-color);
     border-radius: 0.5rem;
+}
+
+@media (min-width: 990px) {
+    .home {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 13rem 0 2%;
+    }
+
+    .container {
+        margin: 5rem 0% 2%;
+    }
+
+    .about {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 9rem 0 2%;
+    }
+
+    .menu {
+        margin: 9rem 0 2%;
+    }
+    .contact {
+        padding: 9rem 4% 2%;
+    }
+    .contact .main_contact {
+        justify-items: center;
+    }
 }
