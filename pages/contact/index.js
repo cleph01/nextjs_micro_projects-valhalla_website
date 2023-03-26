@@ -68,8 +68,8 @@ const index = () => {
 
                     <h3>Hours:</h3>
                     <p>
-                        We are open from 11:30AM to 9PM Tuesday through Sunday;{" "}
-                        <span>closed</span> on Monday.
+                        We are open from 11:30AM to 9:00PM Tuesday through
+                        Sunday; <span>closed</span> on Monday.
                     </p>
                     <p>We look forward to seeing you!</p>
                 </div>
