@@ -93,9 +93,11 @@ const index = () => {
                         Please call us to discuss luncheon menus. It would be
                         our pleasure to help you organize your event.
                     </p>
-                    <br />
+
                     <h2>
                         <span>To discuss menu options</span>
+                        <br />
+                        <br />
                     </h2>
 
                     <a href="tel:+19146824076">
@@ -124,7 +126,7 @@ const index = () => {
             </section>
 
             {/* buffet  */}
-            <section className={styles.container} id="buffet">
+            <section className={styles.buffet_container} id="buffet">
                 <div className={styles.main_text}>
                     <h2>Customized Buffet</h2>
                     <p>Select two of the below items as main dish</p>
@@ -140,7 +142,7 @@ const index = () => {
 
             {/* sides  */}
 
-            <section className={styles.container} id="sides">
+            <section className={styles.sides_container} id="sides">
                 <div className={styles.main_text}>
                     <h2>Accompaniments</h2>
                     <p>Select two of the below items as sides</p>
@@ -154,7 +156,7 @@ const index = () => {
             </section>
 
             {/* pricing  */}
-            <section className={styles.container} id="pricing">
+            <section className={styles.pricing_container} id="pricing">
                 <div className={styles.main_text}>
                     <h2>Pricing</h2>
                     <h3>$28.95 per guest, plus tax and gratuity</h3>

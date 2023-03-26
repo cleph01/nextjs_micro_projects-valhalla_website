@@ -1,36 +1,31 @@
-.container {
-    display: flex;
-    flex-direction: column;
-}
-
-.container .main_text {
+.main_text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
 }
-.container .main_text h2 {
+.main_text h2 {
     font-size: var(--h2-font);
     margin-bottom: 1rem;
 }
 
-.container .main_text h3 {
+.main_text h3 {
     font-size: var(--h3-font);
     margin-bottom: 1rem;
 }
 
-.container .main_text ul {
+.main_text ul {
     margin: 0 0 2rem 2rem;
 }
 
-.container .main_text ul li {
+.main_text ul li {
     color: var(--second-color);
     list-style: circle;
     font-size: var(--p-font);
     line-height: 1.75;
 }
 
-.container .main_text p {
+.main_text p {
     font-size: var(--p-font);
     font-weight: 500;
     color: var(--second-color);
@@ -38,13 +33,36 @@
     margin-bottom: 2rem;
 }
 
-.container .container_box {
+.container_box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(23rem, auto));
     gap: 1.6rem;
     align-items: center;
     margin-top: 0.4rem;
 }
+
+/* intro container  */
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 13rem 4% 2%;
+}
+
+/* buffet container  */
+.buffet_container {
+    margin: 5rem 4% 2%;
+}
+
+/* accompaniments  container */
+.sides_container {
+    margin: 5rem 4% 2%;
+}
+
+/* pricing container  */
+.pricing_container {
+    margin: 5rem 4% 2%;
+}
+
 /* button  */
 .btn {
     display: inline-block;
@@ -64,7 +82,7 @@
 
 /* giphy container  */
 .giph_container {
-    padding: 0 8%;
+    padding: 0 12rem 4rem;
     display: flex;
     justify-content: center;
 }

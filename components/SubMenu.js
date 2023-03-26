@@ -8,13 +8,13 @@ const SubMenu = () => {
                 <Link href="/">Home</Link>
             </li>
             <li className={styles.subMenu}>
-                <Link href="/#about">About</Link>
+                <Link href="/about">About</Link>
             </li>
             <li className={styles.subMenu}>
                 <Link href="/catering">Catering</Link>
             </li>
             <li className={styles.subMenu}>
-                <Link href="/#contact">Contact</Link>
+                <Link href="/contact">Contact</Link>
             </li>
         </>
     );

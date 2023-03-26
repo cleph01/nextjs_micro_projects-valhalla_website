@@ -127,8 +127,7 @@ export default function Home() {
                         Our <span>Rail</span> Car Fare
                     </h2>
                     <p className={styles.hours}>
-                        Lunch and Dinner served 6 days a week <br />
-                        (closed Mondays)
+                        Lunch and Dinner served 6 days a week (closed Mondays)
                     </p>{" "}
                 </div>
                 <div className={styles.container_box}>

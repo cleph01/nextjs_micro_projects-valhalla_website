@@ -4,10 +4,10 @@
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    /* height: 114vh; */
     width: 100%;
     align-items: center;
     gap: 2rem;
+    margin: 9rem 4% 2%;
 }
 
 .home .home_text {
@@ -25,7 +25,7 @@
     font-weight: 500;
     color: var(--second-color);
     line-height: 2.5rem;
-    margin-bottom: 2.3rem;
+    margin-bottom: 2rem;
 }
 
 .home .home_text .btn:hover {
@@ -68,6 +68,9 @@
 
 /* container section  */
 
+.container {
+    margin: 5rem 4% 2%;
+}
 .container .main_text {
     display: flex;
     flex-direction: column;
@@ -82,7 +85,7 @@
     font-size: var(--p-font);
     font-weight: 500;
     color: var(--second-color);
-    line-height: 2.5rem;
+    line-height: 2rem;
 }
 
 .container .main_text p.hours {
@@ -178,11 +181,13 @@
 
 /* menu  */
 
+.menu {
+    margin: 5rem 4% 2%;
+}
 .menu .main_text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 30rem;
 }
 
 .menu .main_text h2 {
@@ -194,7 +199,8 @@
     font-size: var(--p-font);
     font-weight: 500;
     color: var(--second-color);
-    line-height: 2.5rem;
+    line-height: 2.3rem;
+    margin-bottom: 2rem;
 }
 
 .menu .menu_content {
