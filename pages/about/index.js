@@ -111,7 +111,7 @@ const index = () => {
 
             {/* scroll top  */}
 
-            <a href="#gallery" className={styles.scroll_top}>
+            <a href="#main" className={styles.scroll_top}>
                 <BiUpArrowAlt />
             </a>
         </>
