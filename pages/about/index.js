@@ -79,9 +79,9 @@ const index = () => {
                 <SubMenu />
             </Header>
 
-            <section className={styles.container} id="gallery">
+            <section className={styles.container} id="main">
                 {/* main dining room  */}
-                <div id="main"></div>
+                <div></div>
                 <Carousel content={images.main} />
 
                 {/* caboose  */}
@@ -89,23 +89,23 @@ const index = () => {
                 <Carousel content={images.caboose} />
 
                 {/* track room  */}
-                <div className="track"></div>
+                <div id="track"></div>
                 <Carousel content={images.trackRoom} />
 
                 {/* club room  */}
-                <div className="club"></div>
+                <div id="club"></div>
                 <Carousel content={images.clubRoom} />
 
                 {/* bar  */}
-                <div className="bar"></div>
+                <div id="bar"></div>
                 <Carousel content={images.bar} />
 
                 {/* presidential car  */}
-                <div className="pres"></div>
+                <div id="pres"></div>
                 <Carousel content={images.presidential} />
 
                 {/* dining rooms  */}
-                <div className="dining"></div>
+                <div id="dining"></div>
                 <Carousel content={images.diningRoom} />
             </section>
 
