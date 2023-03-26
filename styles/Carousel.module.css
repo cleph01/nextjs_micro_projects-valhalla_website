@@ -39,6 +39,7 @@
     cursor: pointer;
     margin-top: 20px;
     font-size: var(--h2-font);
+    color: var(--second-color);
 }
 
 .indicators {
