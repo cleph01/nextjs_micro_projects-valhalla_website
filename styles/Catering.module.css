@@ -82,13 +82,14 @@
 
 /* giphy container  */
 .giph_container {
-    padding: 0 12rem 4rem;
+    padding: 2.5rem 8% 4rem;
     display: flex;
     justify-content: center;
 }
 
-.giph_container iframe {
-    border-radius: 9.8rem;
+.giph_container img {
+    border-radius: 1rem;
+    width: 100%;
 }
 /* scroll top  */
 .scroll_top {

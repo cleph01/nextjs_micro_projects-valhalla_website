@@ -47,7 +47,7 @@ export const images = {
         ],
     },
     presidential: {
-        name: "Presedential Car",
+        name: "Presidential Car",
         description:
             "Lastly, through the bar is the formal and timeless Presidential Car, which celebrated its 125th birthday recently. This room can seat up to 50.",
         images: [

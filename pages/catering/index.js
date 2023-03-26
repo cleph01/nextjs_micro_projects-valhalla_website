@@ -3,6 +3,8 @@ import CateringItem from "@/components/CateringItem";
 import Header from "@/components/Header";
 import SubMenu from "@/components/SubMenu";
 import { menuData } from "@/data/menuData";
+import Image from "next/image";
+import gatzby from "../../media/gatzby.gif";
 
 import { useSelector, useDispatch } from "react-redux";
 import { CLOSE_MENU, TOGGLE_SCROLLING } from "@/redux/reducers/nav";
@@ -184,22 +186,16 @@ const index = () => {
 
                     <p>Sheet cake available at $4 extra per person.</p>
                     <p>
-                        Louise or Stan is always available to help you plan your
-                        gathering. Please call, email, or stop by.
+                        Louise and Stan are always available to help you plan
+                        your gathering. Please call, email, or stop by.
                     </p>
                 </div>
             </section>
 
             {/* gatzby  */}
             <div className={styles.giph_container}>
-                <iframe
-                    src="https://giphy.com/embed/8Iv5lqKwKsZ2g"
-                    width="380"
-                    height="188"
-                    frameBorder="0"
-                    class="giphy-embed"
-                    allowFullScreen
-                ></iframe>
+               
+                <Image src={gatzby} alt="my gif" height={gatzby} width={380} />
             </div>
 
             {/* scroll top  */}

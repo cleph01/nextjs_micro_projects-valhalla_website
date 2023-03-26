@@ -90,10 +90,9 @@ export default function Home() {
                         <span>History</span> with Every Bite.
                     </h1>
                     <p>
-                        Westchester Magazine's "Favorite Local Bar!" for our
-                        plentiful portions of great comfort food, the BEST
-                        burgers, huge fresh salads, and spike-driving
-                        sandwiches!
+                        Voted Westchester Magazine's "Favorite Local Bar!" for
+                        our plentiful portions of great comfort food, the BEST
+                        burgers, huge fresh salads, and delicious sandwiches!
                     </p>
                     <p>
                         We are located in the historic Valhalla Train Station on
@@ -173,7 +172,7 @@ export default function Home() {
                             fit for your transcontinental appetite.
                         </p>
                         <p>
-                            Come enjoy a trip down memory land and grab a
+                            Come enjoy a trip down memory lane and grab a
                             cocktail in the original train station building.
                         </p>
                         <p>

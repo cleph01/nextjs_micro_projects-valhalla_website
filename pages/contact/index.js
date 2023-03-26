@@ -58,11 +58,13 @@ const index = () => {
                         (914) 682-4076 or by email at valhallacrossing@aol.com.
                     </p>
                     <p>Feel free to stop by anytime to visit us personally!</p>
+
+                    <h3>Hours:</h3>
                     <p>
-                        We are open for business from 11:30AM each day to 9PM on
-                        Sunday and Monday, 10PM Tuesday through Saturday. We
-                        look forward to hearing from you!
+                        We are open from 11:30AM to 9PM Tuesday through Sunday;{" "}
+                        <span>closed</span> on Monday.
                     </p>
+                    <p>We look forward to seeing you!</p>
                 </div>
                 <div className={styles.call}>
                     <a href="tel:+19146824076">
