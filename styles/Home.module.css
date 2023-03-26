@@ -147,6 +147,7 @@
     grid-template-columns: 1fr;
     align-items: center;
     gap: 4rem;
+    margin: 5rem 4% 2%;
 }
 
 .about .about_img {
