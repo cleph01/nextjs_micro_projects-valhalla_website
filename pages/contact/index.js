@@ -54,11 +54,12 @@ const index = () => {
                         Looking <span>Forward</span> to Seeing You
                     </h2>
                     <p>
-                        You can contact us at the Valhalla Crossing by calling
+                        You can contact us at the Valhalla Crossing by clicking
+                        here to call{" "}
                         <a href="tel:+19146824076">
                             <span> 914.682.4076</span>
                         </a>{" "}
-                        or by email at{" "}
+                        or email{" "}
                         <a href="mailto:valhallacrossing@aol.com">
                             <span>valhallacrossing@aol.com</span>
                         </a>
