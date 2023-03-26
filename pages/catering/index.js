@@ -193,10 +193,10 @@ const index = () => {
             </section>
 
             {/* gatzby  */}
-            <div className={styles.giph_container}>
+            {/* <div className={styles.giph_container}>
                
                 <Image src={gatzby} alt="my gif" height={gatzby} width={380} />
-            </div>
+            </div> */}
 
             {/* scroll top  */}
 

@@ -60,7 +60,7 @@
 
 /* pricing container  */
 .pricing_container {
-    margin: 5rem 4% 0;
+    margin: 5rem 4% 8rem;
 }
 
 /* button  */
@@ -81,7 +81,7 @@
 }
 
 /* giphy container  */
-.giph_container {
+/* .giph_container {
     padding: 2.5rem 8% 4rem;
     display: flex;
     justify-content: center;
@@ -90,7 +90,7 @@
 .giph_container img {
     border-radius: 1rem;
     width: 100%;
-}
+} */
 /* scroll top  */
 .scroll_top {
     position: fixed;
