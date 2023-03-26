@@ -13,7 +13,7 @@ const Header = ({ children }) => {
     const handleMenuClick = () => {
         dispatch(TOGGLE_MENU());
     };
-    console.log("state: ", openMenu, scrolling);
+
     return (
         <header
             className={`${styles.header} ${scrolling ? styles.sticky : ""}`}
