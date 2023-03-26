@@ -65,11 +65,11 @@ const index = () => {
                         </a>
                         .
                     </p>
-                    <p>Feel free to stop by anytime to visit us personally!</p>
+                    <p>Feel free to stop by anytime to visit us!</p>
 
                     <h3>Hours:</h3>
                     <p>
-                        We are open from 11:30AM to 9:00PM Tuesday through
+                        We are open from 11:30AM to 9:00PM, Tuesday through
                         Sunday; <span>closed</span> on Monday.
                     </p>
                     <p>We look forward to seeing you!</p>
