@@ -60,7 +60,10 @@ const index = () => {
                             <span> 914.682.4076</span>
                         </a>{" "}
                         or email{" "}
-                        <a href="mailto:valhallacrossing@aol.com">
+                        <a
+                            href="mailto:valhallacrossing@aol.com"
+                            target="_blank"
+                        >
                             <span>valhallacrossing@aol.com</span>
                         </a>
                         .
@@ -86,7 +89,7 @@ const index = () => {
                 </div>
 
                 <div className={styles.email}>
-                    <a href="mailto:valhallacrossing@aol.com">
+                    <a href="mailto:valhallacrossing@aol.com" target="_blank">
                         <span className={styles.btn}>
                             <BiEnvelope />
                         </span>
