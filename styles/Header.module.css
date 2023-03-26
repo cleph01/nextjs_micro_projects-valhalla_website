@@ -84,7 +84,7 @@
     display: block;
 }
 
-@media (min-width: 990px) {
+/* @media (min-width: 990px) {
     .navbar {
         position: static;
         width: auto;
@@ -104,4 +104,4 @@
     .menu_icon {
         display: none;
     }
-}
+} */

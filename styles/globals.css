@@ -45,7 +45,7 @@ section {
 @media (min-width: 990px) {
     :root {
         --brand-font: 2.8rem;
-        --nav-font: 1.8rem;
+        /* --nav-font: 1.8rem; */
         --h2-font: 2rem;
     }
 }

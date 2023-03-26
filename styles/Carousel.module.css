@@ -66,3 +66,9 @@
 .indicator_symbol_active {
     color: var(--main-color);
 }
+
+@media (min-width: 990px) {
+    .carousel {
+        width: 50%;
+    }
+}
